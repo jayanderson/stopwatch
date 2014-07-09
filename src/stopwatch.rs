@@ -18,8 +18,8 @@ impl fmt::Show for Elapsed {
 }
 
 impl Stopwatch {
-  pub fn new() -> Box<Stopwatch> {
-    box Stopwatch {
+  pub fn new() -> Stopwatch {
+    Stopwatch {
       start: time::get_time(),
     }
   }
